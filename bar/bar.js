@@ -34,9 +34,10 @@
     	
 		var dark = $(this).attr('data-dark');
 
-		if(dark == 'dark' && !$('#demo_dark_css').length) {
-            $('head').append('<link rel="stylesheet" id="demo_dark_css" href="css/template-dark/dark.css" />');
-        } else {
+		if(dark == 'dark') {
+			if (!$('#demo_dark_css').length)
+            	$('head').append('<link rel="stylesheet" id="demo_dark_css" href="css/template-dark/dark.css" />');
+        } else if (dark == 'light') {
             $('#demo_dark_css').remove();
         }
 
