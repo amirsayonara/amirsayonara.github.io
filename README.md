@@ -1,7 +1,7 @@
 # Personal CV
 [![License](https://img.shields.io/github/license/amirsayonara/amirsayonara.github.io)](LICENSE)
 [![Twitter Follow](https://img.shields.io/twitter/follow/amir_sayonara)](https://twitter.com/amir_sayonara)
-> Curriculum Vitae (CV) saya yang buat dalam versi web.
+> Curriculum Vitae (CV) pribadi saya yang dibuat dalam versi web.
 
 > [Copyright (c) 2020 Amir Sayonara](LICENSE)
 
