@@ -45,7 +45,6 @@
 			setCookie('tema', 'gelap', 365*3);
 			if (!$('#demo_dark_css').length)
 				$('head').append('<link rel="stylesheet" id="demo_dark_css" href="css/template-dark/dark.css" />');
-			document.cookie
         } else if (dark == 'light') {
 			setCookie('tema', 'terang', 365*3);
             $('#demo_dark_css').remove();
@@ -54,6 +53,10 @@
         return false;
 	});
 
-	if (getCookie('tema')=='gelap') $('head').append('<link rel="stylesheet" id="demo_dark_css" href="css/template-dark/dark.css" />');
+	if (getCookie('tema')=='gelap') {
+		$("[data-dark='dark']").closest('.demo_list').find('a').removeClass('active');
+		$("[data-dark='dark']").addClass('active');
+		$('head').append('<link rel="stylesheet" id="demo_dark_css" href="css/template-dark/dark.css" />');
+	}
 
 } )( jQuery );
