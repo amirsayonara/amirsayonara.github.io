@@ -2567,3 +2567,9 @@
 	-webkit-transform: rotate(360deg);
 	transform: rotate(360deg);
 }
+
+@media print {
+    .theme_panel, header.header {
+        display: none;
+    }
+}

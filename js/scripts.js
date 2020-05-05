@@ -510,6 +510,11 @@ function initMap() {
 	// $.get("../bar/bar.html", function (data) {
     //     $('body').append(data);
  	// 	console.log(data);
-    // });
+	// });
+	
+	$('#cetak-cv').click(function(e){
+		window.print();
+		return false;
+	})
 	
 } )( jQuery );
