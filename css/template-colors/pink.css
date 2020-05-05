@@ -20,7 +20,7 @@
 	background: #ff5e94;
 }
 
-.lnk:hover,
+.lnk:hover, .syr-link:hover,
 .button:hover {
 	color: #ff5e94;
 }
