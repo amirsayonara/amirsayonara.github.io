@@ -1,14 +1,877 @@
-<html> 
-	<head> 
-		<title>Amir Sayonara's Blog</title> 
-		<script language="javascript" type="text/javascript">
-			function resizeIframe(obj) {
-			obj.style.height = document.body.scrollHeight + 'px';		
-			}
-		</script>
-		<link rel="icon" href="https://amirsayonara.files.wordpress.com/2017/04/amir-sayonara2.jpg?w=32">
-	</head> 
-	<body bgcolor="#ffffff" style="padding:0;margin:0"> 
-		<iframe style="width:100%;height:100%;border:none" name="Stack" src="https://amirsayonara.wordpress.com" frameborder="0" scrolling="yes" id="iframe" onload='javascript:resizeIframe(this);' />
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<title>Amir Sayonara - Personal Curriculum Vitae</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<meta name="description" content="Personal Curriculum Vitae" />
+	<meta name="keywords" content="vcard, resume, personal, card, cv, cards, portfolio" />
+	<meta name="author" content="Amir Sayonara" />
+	
+	<!--
+		Load Fonts
+	-->
+	<link rel="stylesheet" href="css/font-awesome/all.css">
+	<link rel="stylesheet" href="css/font-google-apis/css.css">
+	
+	<!--
+		Load CSS
+	-->
+	<link rel="stylesheet" href="css/basic.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="css/blogs.css" />
+	<link rel="stylesheet" href="css/ionicons.css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" />
+	<link rel="stylesheet" href="css/animate.css" />
+	<link rel="stylesheet" href="css/owl.carousel.css" />
+
+	<!--
+		Background Gradient
+	-->
+	<link rel="stylesheet" href="css/gradient.css" />
+	
+	<!--
+		Template New-Skin
+	-->
+	<link rel="stylesheet" href="css/new-skin/new-skin.css" />
+
+	<!--
+		Template RTL
+	-->
+	<!--<link rel="stylesheet" href="css/rtl.css" />-->
+	
+	<!--
+		Template Colors
+	-->
+	<link rel="stylesheet" href="css/template-colors/green.css" />
+	<!--<link rel="stylesheet" href="css/template-colors/blue.css" />-->
+	<!--<link rel="stylesheet" href="css/template-colors/orange.css" />-->
+	<!--<link rel="stylesheet" href="css/template-colors/pink.css" />-->
+	<!--<link rel="stylesheet" href="css/template-colors/purple.css" />-->
+	<!--<link rel="stylesheet" href="css/template-colors/red.css" />-->
+
+	<!--
+		Template Dark
+	-->
+	<!--<link rel="stylesheet" href="css/template-dark/dark.css" />-->
+	
+
+	<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<!--
+		Favicons
+	-->
+	<link rel="shortcut icon" href="data:image/gif;base64,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">
+	
+</head>
+
+<body>
+	<div class="page new-skin">
+		
+		<!-- preloader -->
+		<div class="preloader">
+			<div class="centrize full-width">
+				<div class="vertical-center">
+					<div class="spinner">
+						<div class="double-bounce1"></div>
+						<div class="double-bounce2"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- background -->
+		<div class="background gradient">
+			<ul class="bg-bubbles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+		</div>
+
+		<!--
+			Container
+		-->
+		<div class="container opened" data-animation-in="fadeInLeft" data-animation-out="fadeOutLeft">
+
+			<!--
+				Header
+			-->
+			<header class="header">
+
+				<!-- menu -->
+				<div class="top-menu">
+					<ul>
+						<li class="active">
+							<a href="#about-card">
+								<span class="icon ion-person"></span>
+								<span class="link">Tentang</span>
+							</a>
+						</li>
+						<li>
+							<a href="#resume-card">
+								<span class="icon ion-android-list"></span>
+								<span class="link">Resume</span>
+							</a>
+						</li>
+						<li>
+							<a href="#works-card">
+								<span class="icon ion-paintbrush"></span>
+								<span class="link">Pekerjaan</span>
+							</a>
+						</li>
+						<li>
+							<a href="#blog-card">
+								<span class="icon ion-chatbox-working"></span>
+								<span class="link">Blog</span>
+							</a>
+						</li>
+						<li>
+							<a href="#contacts-card">
+								<span class="icon ion-at"></span>
+								<span class="link">Kontak</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+			</header>
+
+			<!--
+				Card - Started
+			-->
+			<div class="card-started" id="home-card">
+
+				<!--
+					Profile
+				-->
+				<div class="profile">
+
+					<!-- profile image -->
+					<div class="slide" style="background-image: url(images/bg.jpg);"></div>
+
+					<!-- profile photo -->
+					<div class="image">
+						<img src="images/profile.jpg" alt="" />
+					</div>
+
+					<!-- profile titles -->
+					<div class="title">Amir Sayonara</div>
+					<div class="subtitle">IT Specialist</div>
+
+					<!-- profile socials -->
+					<div class="social">
+						<a target="_blank" href="http://github.com/amirsayonara"><span class="fab fa-github"></span></a>
+						<a target="_blank" href="http://twitter.com/amir_sayonara"><span class="fab fa-twitter"></span></a>
+						<a target="_blank" href="http://www.instagram.com/amir_sayonara"><span class="fab fa-instagram"></span></a>
+						<a target="_blank" href="http://www.facebook.com/amir.sayonara.1"><span class="fab fa-facebook"></span></a>
+						<a target="_blank" href="http://www.linkedin.com/in/amirsayonara"><span class="fab fa-linkedin"></span></a>
+						<a target="_blank" href="http://pinterest.com/amirsayonara"><span class="fab fa-pinterest"></span></a>
+						<a target="_blank" href="http://amirsayonara.tumblr.com"><span class="fab fa-tumblr"></span></a>
+						<a target="_blank" href="http://www.youtube.com/user/TERMINATOR1234567ism"><span class="fab fa-youtube"></span></a>
+					</div>
+					
+					<!-- profile buttons -->
+					<div class="lnks">
+						<a href="#" class="lnk">
+							<span class="text">Download CV</span>
+							<span class="ion ion-archive"></span>
+						</a>
+						<a href="#" class="lnk discover">
+							<span class="text">Kontak Saya</span>
+							<span class="arrow"></span>
+						</a>
+					</div>
+
+				</div>
+
+			</div>
+
+			<!-- 
+				Card - About
+			-->
+			<div class="card-inner animated active" id="about-card">
+				<div class="card-wrap">
+
+					<!-- 
+						About 
+					-->
+					<div class="content about">
+
+						<!-- title -->
+						<div class="title">Tentang Saya</div>
+
+						<!-- content -->
+						<div class="row">
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+								<div class="text-box">
+									<p>
+										Nama asli saya Moch. Amir, Amir Sayonara adalah nama alias saya di profil online.
+										Saya seorang Spesialis Teknologi Informasi <i>(Information Technology/IT)</i>.
+										Saya dapat membangun apa saja yang berhubungan dengan IT dan hal yang saya kuasai.
+									</p>
+								</div>
+							</div>
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+								<div class="info-list">
+									<ul>
+										<li><strong>Umur </strong> <span id="_umur">..</span></li>
+										<li><strong><i>Freelance</i></strong> Tersedia</li>
+										<li><strong>Tempat Tinggal</strong> Indonesia</li>
+										<li><strong>Alamat</strong> Bangkalan, 69161</li>
+									</ul>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+
+					</div>
+
+					<!--
+						Services
+					-->
+					<div class="content services">
+
+						<!-- title -->
+						<div class="title">Layanan Saya</div>
+
+						<!-- content -->
+						<div class="row service-items border-line-v">
+
+							<!-- service item -->
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-h">
+								<div class="service-item">
+									<div class="icon"><span class="ion ion-code"></span></div>
+									<div class="name">Web Development</div>
+									<p>
+										Membangun dan mengembangkan aplikasi web yang support terhadap semua device dan cocok untuk
+										peninjauan jarak jauh.
+									</p>
+								</div>
+							</div>
+
+							<!-- service item -->
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-h">
+								<div class="service-item">
+									<div class="icon"><span class="ion ion-ios-world-outline"></span></div>
+									<div class="name">Expert Networking</div>
+									<p>
+										Merancang, membangun, dan merawat jaringan.
+									</p>
+								</div>
+							</div>
+
+							<!-- service item -->
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-h">
+								<div class="service-item">
+									<div class="icon"><span class="ion ion-ios-list"></span></div>
+									<div class="name">Database Administrator</div>
+									<p>
+										Merancang, membangun, dan memelihara database (MySQL based).
+									</p>
+								</div>
+							</div>
+
+							<!-- service item -->
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-h">
+								<div class="service-item">
+									<div class="icon"><span class="ion ion-android-desktop"></span></div>
+									<div class="name">Desktop Application</div>
+									<p>
+										Membangun aplikasi desktop (komputer).
+									</p>
+								</div>
+							</div>
+
+							<!-- service item -->
+							<div class="col col-d-6 col-t-6 col-m-12">
+								<div class="service-item">
+									<div class="icon"><span class="ion ion-iphone"></span></div>
+									<div class="name">Mobile Application</div>
+									<p>
+										Aplikasi mobile yang terintegrasi dengan layanan aplikasi web.
+									</p>
+								</div>
+							</div>
+
+							<!-- service item -->
+							<div class="col col-d-6 col-t-6 col-m-12">
+								<div class="service-item">
+									<div class="icon"><span class="ion ion-document-text"></span></div>
+									<div class="name">Expert Office Document</div>
+									<p>
+										Membuat dokumen office (Word, Excel).
+									</p>
+								</div>
+							</div>
+
+							<div class="clear"></div>
+						</div>
+
+					</div>
+
+					<!--
+						Price Tables
+					-->
+					<div class="content pricing">
+
+						<!-- title -->
+						<div class="title">Pembayaran</div>
+
+						<!-- content -->
+						<div class="row">
+							<!-- pricing item -->
+							<div class="col col-d-12 col-t-12 col-m-12 border-line-v">
+								<div class="pricing-item">
+									<p>Untuk masalah pembayaran dapat didiskusikan lebih lanjut dengan menghubungi saya pada kontak yang telah disediakan.</p>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+
+					</div>
+
+					<!--
+						Fun Fact
+					-->
+					<div class="content fuct">
+
+						<!-- title -->
+						<div class="title">Fakta Menarik</div>
+
+						<!-- content -->
+						<div class="row fuct-items">
+
+							<!-- fuct item -->
+							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+								<div class="fuct-item">
+									<div class="icon"><span class="ion ion-disc"></span></div>
+									<div class="name">>10 Pengalaman IT</div>
+								</div>
+							</div>
+
+							<!-- fuct item -->
+							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+								<div class="fuct-item">
+									<div class="icon"><span class="ion ion-trophy"></span></div>
+									<div class="name">3 Penghargaan</div>
+								</div>
+							</div>
+
+							<!-- fuct item -->
+							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+								<div class="fuct-item">
+									<div class="icon"><span class="ion ion-coffee"></span></div>
+									<div class="name">Tidak butuh kopi untuk begadang</div>
+								</div>
+							</div>
+
+							<!-- fuct item -->
+							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+								<div class="fuct-item">
+									<div class="icon"><span class="ion ion-flag"></span></div>
+									<div class="name">Rekor jarang tidur</div>
+								</div>
+							</div>
+
+							<div class="clear"></div>
+						</div>
+
+					</div>
+
+					<!--
+						Testimonials
+					-->
+					<div class="content testimonials">
+
+						<!-- title -->
+						<div class="title">Kutipan Favorit</div>
+
+						<!-- content -->
+						<div class="row testimonials-items">
+
+							<!-- client item -->
+							<div class="col col-d-12 col-t-12 col-m-12 border-line-v">
+								<div class="revs-carousel default-revs">
+									<div class="owl-carousel">
+										<div class="item">
+											<div class="revs-item">
+												<div class="text">
+													Hidup bukanlah permainan keberuntungan, kalau kau ingin menang kau harus bekerja keras.
+												</div>
+												<div class="user">
+													<div class="img"><img src="images/sora.png" alt="" /></div>
+													<div class="info">
+														<div class="name">Sora</div>
+														<div class="company">No Game No Life</div>
+													</div>
+													<div class="clear"></div>
+												</div>
+											</div>
+										</div>
+										<div class="item">
+											<div class="revs-item">
+												<div class="text">
+													Kalau memang tidak ada yang bisa dipuji dariku, jangan dipaksakan.
+												</div>
+												<div class="user">
+													<div class="img"><img src="images/kazuma.png" alt="" /></div>
+													<div class="info">
+														<div class="name">Satou Kazuma</div>
+														<div class="company">Konosuba</div>
+													</div>
+													<div class="clear"></div>
+												</div>
+											</div>
+										</div>
+										<div class="item">
+											<div class="revs-item">
+												<div class="text">
+													Aku tidak bodoh, aku hanya malas menunjukkan bahwa aku pintar.
+												</div>
+												<div class="user">
+													<div class="img"><img src="images/houtarou.jpg" alt="" /></div>
+													<div class="info">
+														<div class="name">Oreki Houtarou</div>
+														<div class="company">Hyouka</div>
+													</div>
+													<div class="clear"></div>
+												</div>
+											</div>
+										</div>
+										<div class="item">
+											<div class="revs-item">
+												<div class="text">
+													Semua manusia hanyalah alat. Tak peduli apa yang harus dilakukan, tak peduli apa yang harus dikorbankan. Di dunia ini kemenangan adalah segalanya.
+												</div>
+												<div class="user">
+													<div class="img"><img src="images/kiyotaka.jpg" alt="" /></div>
+													<div class="info">
+														<div class="name">Ayanokouji Kiyotaka</div>
+														<div class="company">Classroom of The Elite</div>
+													</div>
+													<div class="clear"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="clear"></div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+			<!--
+				Card - Resume
+			-->
+			<div class="card-inner" id="resume-card">
+				<div class="card-wrap">
+
+					<!--
+						Resume
+					-->
+					<div class="content resume">
+
+						<!-- title -->
+						<div class="title">Resume</div>
+
+						<!-- content -->
+						<div class="row">
+
+							<!-- experience -->
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+								<div class="resume-title border-line-h">
+									<div class="icon"><i class="ion ion-briefcase"></i></div>
+									<div class="name">Pengalaman</div>
+								</div>
+								<div class="resume-items">
+									<div class="resume-item border-line-h active">
+										<div class="date">2015 - Sekarang</div>
+										<div class="name">IT Support</div>
+										<div class="company">Playgroup</div>
+										<p>
+											Membuat dan mengembangkan IT.
+										</p>
+									</div>
+									<div class="resume-item border-line-h">
+										<div class="date">2012 - 2017</div>
+										<div class="name">IT Colsultant</div>
+										<div class="company">Kecamatan Socah</div>
+										<p>
+											Memonitoring dan membimbing proyek IT.
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<!-- education -->
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+								<div class="resume-title border-line-h">
+									<div class="icon"><i class="ion ion-university"></i></div>
+									<div class="name">Pendidikan</div>
+								</div>
+								<div class="resume-items">
+									<div class="resume-item border-line-h active">
+										<div class="date">2016 - Sekarang</div>
+										<div class="name">Universitas Trunojoyo Madura</div>
+										<div class="company">Bangkalan, Indonesia</div>
+										<p>
+											Belajar tentang <i>Computer Science</i> dengan peringkat Sarjana Komputer.
+										</p>
+									</div>
+									<div class="resume-item border-line-h">
+										<div class="date">2017 - 2018</div>
+										<div class="name">Cybersecurity Course</div>
+										<div class="company">Cisco Networking Academy, USA</div>
+										<p>
+											Belajar cara pengamanan data.
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="clear"></div>
+						</div>
+
+					</div>
+
+					<!--
+						Skills
+					-->
+					<div class="content skills">
+
+						<!-- title -->
+						<div class="title">Kemampuan Saya</div>
+					
+						<!-- content -->
+						<div class="row">
+						
+							<!-- skill item -->
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+								<div class="skills-list">
+									<div class="skill-title border-line-h">
+										<div class="icon"><i class="ion ion-easel"></i></div>
+										<div class="name">Desain</div>
+									</div>
+									<ul>
+										<li class="border-line-h"> 
+											<div class="name">Web Design</div>
+											<div class="progress">
+												<div class="percentage" style="width:60%;"></div>
+											</div>
+										</li>
+										<li class="border-line-h"> 
+											<div class="name">Photoshop</div>
+											<div class="progress">
+												<div class="percentage" style="width:75%;"></div>
+											</div>
+										</li>
+										<li>
+											<div class="name">Graphic Design</div>
+											<div class="progress">
+												<div class="percentage" style="width:75%;"></div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<!-- skill item -->
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+								<div class="skills-list dotted">
+									<div class="skill-title border-line-h">
+										<div class="icon"><i class="ion ion-flag"></i></div>
+										<div class="name">Bahasa</div>
+									</div>
+									<ul>
+										<li class="border-line-h"> 
+											<div class="name">Indonesia</div>
+											<div class="progress">
+												<div class="percentage" style="width:85%;"></div>
+											</div>
+										</li>
+										<li class="border-line-h"> 
+											<div class="name">Inggris</div>
+											<div class="progress">
+												<div class="percentage" style="width:45%;"></div>
+											</div>
+										</li>
+										<li>
+											<div class="name">Madura</div>
+											<div class="progress ">
+												<div class="percentage" style="width:90%;"></div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<!-- skill item -->
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+								<div class="skills-list circles">
+									<div class="skill-title border-line-h">
+										<div class="icon"><i class="ion ion-code"></i></div>
+										<div class="name">Pemrograman</div>
+									</div>
+									<ul>
+										<li> 
+											<div class="name">Python, Java, Matlab</div>
+											<div class="progress p80">
+												<span>80%</span>
+											</div>
+										</li>
+										<li> 
+											<div class="name">PHP, MYSQL</div>
+											<div class="progress p85">
+												<span>85%</span>
+											</div>
+										</li>
+										<li> 
+											<div class="name">JavaScript</div>
+											<div class="progress p85">
+												<span>85%</span>
+											</div>
+										</li>
+										<li> 
+											<div class="name">HTML / CSS</div>
+											<div class="progress p95">
+												<span>95%</span>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<!-- skill item -->
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+								<div class="skills-list list">
+									<div class="skill-title border-line-h">
+										<div class="icon"><i class="ion ion-android-list"></i></div>
+										<div class="name">Pengetahuan</div>
+									</div>
+									<ul>
+										<li> 
+											<div class="name">Encryption Security</div>
+										</li>
+										<li> 
+											<div class="name">Web server architecture</div>
+										</li>
+										<li> 
+											<div class="name">Internet of Things (IoT)</div>
+										</li>
+										<li> 
+											<div class="name">Smart City</div>
+										</li>
+										<li> 
+											<div class="name">Website hosting</div>
+										</li>
+										<li> 
+											<div class="name">Aplikasi Android</div>
+										</li>
+										<li> 
+											<div class="name">Modern and mobile-ready</div>
+										</li>
+										<li> 
+											<div class="name">Graphics and animations</div>
+										</li>
+										<li> 
+											<div class="name">Search engine architecture</div>
+										</li>
+										<li> 
+											<div class="name">Linux Debian</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							
+							<div class="clear"></div>
+						</div>
+						
+					</div>
+
+				</div>
+			</div>
+
+			<!--
+				Card - Works
+			-->
+			<div class="card-inner" id="works-card">
+				<div class="card-wrap">
+
+					<!--
+						Works
+					-->
+					<div class="content works">
+
+						<!-- title -->
+						<div class="title">Karya Terbaru</div>
+
+						<!-- content -->
+						<div class="row border-line-v">
+							<div class="col col-d-12 col-t-12 col-m-12 border-line-h">
+								<p>Karya yang sudah saya publikasikan dapat dilihat pada halaman GitHub saya pada link berikut:</p>
+								<p><a href="https://github.com/amirsayonara" target="_blank"><i class="ion ion-social-github"></i> GitHub: Amir Sayonara</a></p>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--
+				Card - Blog
+			-->
+			<div class="card-inner blog" id="blog-card">
+				<div class="card-wrap">
+
+					<!--
+						Blog
+					-->
+					<div class="content blog">
+
+						<!-- title -->
+						<div class="title">Post Blog</div>
+
+						<!-- content -->
+						<div class="row border-line-v">
+
+							<!-- blog item -->
+							<div class="col col-d-12 col-t-12 col-m-12">
+								<p>Untuk melihat catatan blog saya dapat mengakses laman berikut:</p>
+								<p><a href="https://amirsayonara.wordpress.com" target="_blank"><i class="ion ion-social-wordpress"></i> Blog: Amir Sayonara</a></p>
+							</div>
+							<div class="clear"></div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+			<!--
+				Card - Contacts
+			-->
+			<div class="card-inner contacts" id="contacts-card">
+				<div class="card-wrap">
+
+					<!--
+						Conacts Info
+					-->
+					<div class="content contacts">
+
+						<!-- title -->
+						<div class="title">Langsung Klik</div>
+
+						<!-- content -->
+						<div class="row">
+							<div class="col col-d-12 col-t-12 col-m-12 border-line-v">
+								<div class="info-list">
+									<ul>
+										<li><strong>Alamat</strong> Bangkalan, Indonesia</li>
+										<li><strong>E-mail</strong> <a href="mailto:amirsayonara@gmail.com">amirsayonara@gmail.com</a></li>
+										<!--<li><strong>E-mail</strong> <a href="mailto:amirsayonara@hotmail.com">amirsayonara@hotmail.com</a></li>
+										<li><strong>E-mail</strong> <a href="mailto:amirsayonara@outlook.com">amirsayonara@outlook.com</a></li>
+										<li><strong>E-mail</strong> <a href="mailto:amirsayonara@outlook.co.id">amirsayonara@outlook.co.id</a></li>
+										<li><strong>E-mail</strong> <a href="mailto:amirsayonara@ymail.com">amirsayonara@ymail.com</a></li>
+										<li><strong>E-mail</strong> <a href="mailto:amirsayonara@yandex.com">amirsayonara@yandex.com</a></li>-->
+										<li><strong>WhatsApp</strong> <a href="tel:+6285230825938">+62 852 308 259 38</a></li>
+										<li><strong>Freelance</strong> Available</li>
+									</ul>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	
+	<!--
+		jQuery Scripts
+	-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.validate.js"></script>
+	<script src="js/jquery.magnific-popup.js"></script>
+	<script src="js/imagesloaded.pkgd.js"></script>
+	<script src="js/isotope.pkgd.js"></script>
+	<script src="js/jquery.slimscroll.js"></script>
+	<script src="js/owl.carousel.js"></script>
+	
+	<!--
+		Main Scripts
+	-->
+	<script src="js/scripts.js"></script>
+	<script>var tgl=new Date();var umur=tgl.getFullYear()-1998;$('#_umur').html(umur)</script>
+
+	<!--
+		BAR
+	-->
+	<link rel="stylesheet" href="bar/bar.css" />
+
+	<div class="theme_panel active">
+		<div class="toggle_bts">
+			<a class="toggle-theme-panel sett active" href="#">
+				<i class="ion ion-android-settings"></i>
+			</a>
+		</div>
+		<div class="theme_menu">
+			<h4>Light/Dark Version</h4>
+			<ul class="theme demo_list dark_style">
+				<li style="width: 50%;"><a href="#" class="active" data-dark="light"><strong>Light</strong></a></li>
+				<li style="width: 50%;"><a href="#" data-dark="dark"><strong>Dark</strong></a></li>
+			</ul>
+			<div class="clear"></div>
+			<h4>Color Switcher</h4>
+			<div class="segment">
+				<ul class="theme layout_style">
+					<li>
+						<a title="theme-green" href="#" data-color="green" class="active" style="background-color: #78cc6d;"></a>
+					</li>
+					<li>
+						<a title="theme-blue" href="#" data-color="blue" style="background-color: rgba(8, 86, 193, 1);"></a>
+					</li>
+					<li>
+						<a title="theme-orange" href="#" data-color="orange" style="background-color: rgba(255, 152, 0, 1);"></a>
+					</li>
+					<li>
+						<a title="theme-pink" href="#" data-color="pink" style="background-color: rgba(255, 94, 148, 1);"></a>
+					</li>
+					<li>
+						<a title="theme-purple" href="#" data-color="purple" style="background-color: rgba(196, 70, 218, 1);"></a>
+					</li>
+					<li>
+						<a title="theme-red" href="#" data-color="red" style="background-color: rgba(232, 103, 107, 1);"></a>
+					</li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<!-- onclick="gtag('event', 'ClickBtn', {'event_category' : 'Buy', 'event_label' : 'BuyBtn'}); return true;" -->
+	<script type="text/javascript" src="bar/bar.js"></script>
+
+	<!--AKHIR BAR-->
+	
+</body>
+
+<!-- Mirrored from bslthemes.com/ryan/demo/index-new-gradient.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 05 May 2020 04:48:27 GMT -->
 </html>
