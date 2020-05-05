@@ -26,8 +26,13 @@
         }
         return false;
 	});
-
-	if (getCookie('warna')!='') $('head').append('<link rel="stylesheet" id="demo_layout_css" href="css/template-colors/'+getCookie('warna')+'.css" />');
+	
+	var _warna = getCookie('warna');
+	if (_warna!='') {
+		$("[data-color='"+_warna+"']").closest('.segment').find('a').removeClass('active');
+		$("[data-color='"+_warna+"']").addClass('active');
+		$('head').append('<link rel="stylesheet" id="demo_layout_css" href="css/template-colors/'+getCookie('warna')+'.css" />');
+	}
     
     //dark panels
     $('.theme_panel .dark_style').on('click', 'a', function(){
