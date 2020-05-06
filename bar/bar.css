@@ -3,10 +3,11 @@
 .theme_panel {
     position: fixed;
     right: -250px;
-    top: 0;
+    top: 30%;
+    bottom: 30%;
     width: 250px;
-    height: 100%;
-    background: #fff;
+    height: 200px;
+    background: #026fe4;
     text-align: center;
     z-index: 999;
     opacity: 1;
@@ -80,9 +81,8 @@
 .toggle_bts {
     padding: 0;
     position: absolute;
-    top: 120px;
+    top: 40%;
     left: -50px;
-    height: 50px;
     line-height: 50px;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
@@ -93,7 +93,7 @@
     display: block;
     width: 50px;
     height: 50px;
-    background: #fff;
+    background: #026fe4;
     text-align: center;
     box-shadow: -4px 7px 10px rgba(0,0,0,0.1);
     border-radius: 4px 0 0 4px;
@@ -102,7 +102,7 @@
 .toggle_bts a .ion {
     font-size: 20px;
     line-height: 50px;
-    color: #222;
+    color: #ffffff;
 }
 
 .toggle_bts a.sett .ion {
@@ -157,8 +157,8 @@
     display: block;
     font-size: 15px;
     line-height: 16px;
-    color: #222;
-    background: #fff;
+    color: #ffffff;
+    background: #026fe4;
     text-transform: uppercase;
     font-weight: 500;
 }
@@ -174,7 +174,7 @@
 }
 
 .theme_menu ul.theme li a:hover, .theme_menu ul.theme li a.active {
-    background: #f9f9f9;
+    background: #ffffff;
 }
 
 .theme_menu ul.theme li {
